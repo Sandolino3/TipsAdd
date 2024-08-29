@@ -76,7 +76,7 @@ document.getElementById('connectWallet').addEventListener('click', async () => {
 document.getElementById('sendTip').addEventListener('click', async () => {
     const tipAmount = document.getElementById('tipAmount').value;
     const accounts = await web3.eth.getAccounts();
-    contract.methods.tip().send({ from: accounts[0], value: web3.utils.toWei(ttipAmount, 'ether') })
+    contract.methods.tip().send({ from: accounts[0], value: web3.utils.toWei(tipAmount, 'ether') })
         .on('transactionHash', (hash) => {
             console.log('Transaction hash:', hash);
         })
@@ -90,13 +90,11 @@ document.getElementById('sendTip').addEventListener('click', async () => {
 });
 
 
-function openForm() {
-	let openButtonEl = document.querySelector('.open-button')
+document.querySelector('.open-button').addEventListener('click',(e)=>{
 	let formEl = document.getElementById("myForm")
-	openButtonEl.style.display = "none";
+	e.currentTarget.style.display = "none";
     formEl.style.display = "block";
-  }
+})
+
+
   
-//   function closeForm() {
-//     formEl.style.display = "none";
-// }

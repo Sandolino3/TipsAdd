@@ -47,7 +47,7 @@ button, input {
 #tipAmount {
   width: 88%;
   padding: 15px;
-  margin: 5px 0 22px 0;
+  margin: 5px 0 1px 0;
   border: none;
   background: #f1f1f1;
 }
@@ -64,6 +64,9 @@ button, input {
   width: 100%;
   margin-bottom:10px;
   opacity: 0.8;
+}
+#sendTip:hover{
+  opacity: 1;
 }
 
 #close {
@@ -85,10 +88,19 @@ button, input {
     width: 100%;
     margin-bottom:10px;
     opacity: 0.8;
-    background-color: red;
+    background-color: rgb(250, 140, 51);
 }
-
-/* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
+#connectWallet:hover{
   opacity: 1;
 }
+/* Add some hover effects to buttons */
+.form-container, .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+#status{
+  margin: 1px 0 20px 0;
+
+  /* position:absolute; */
+}
+
