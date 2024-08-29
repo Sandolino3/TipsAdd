@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Jar DApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <!-- A button to open the popup form -->
+<button class="open-button" onclick="openForm()">If you like our work please leave a Tip here</button>
+
+<!-- The form -->
+<div class="form-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h2>Leave A Tip</h2>
+    <input type="number" id="tipAmount" placeholder="Amount in ETH">
+    <p id="status">Status: Not connected</p>
+
+    <button type="button" id="connectWallet" class="btn cancel">Connect Wallet</button>
+    <button type="button" id="sendTip"class="btn cancel" onclick="closeForm()">Send Tip</button>
+    <span id="close" onclick="this.parentNode.parentNode.remove(); return false;">x</span>
+  </form>
+</div>
+
+    <!-- <h1>Tip Jar</h1>
+    <p id="status">Status: Not connected</p>
+    <button id="connectWallet">Connect Wallet</button>
+    <input type="number" id="tipAmount" placeholder="Amount in ETH">
+    <button id="sendTip">Send Tip</button> -->
+
+    <script src="tip.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js" integrity="sha256-nWBTbvxhJgjslRyuAKJHK+XcZPlCnmIAAMixz6EefVk=" crossorigin="anonymous"></script>
+</body>
+</html>
