@@ -1,9 +1,5 @@
 const contractAddress = '0xf1b09d2429937343741fd918192c802ea210dfbe'; // Replace with your contract address
-const contractABI = `` // Replace with your contract ABI
-// let Web3 = require('web3')
-
-
-[
+const contractABI = [
 	{
 		"inputs": [],
 		"name": "tip",
