@@ -16,17 +16,20 @@
 </div>
 
 <!-- The form -->
-<div class="form-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
-    <h2>Leave A Tip</h2>
-    <input type="number" id="tipAmount" placeholder="Amount in ETH">
-    <p id="status">Status: Not connected</p>
+ <div class="popup-overlay" id="myForm">
+  <div class="form-popup" >
+    <form action="/action_page.php" class="form-container">
+      <h2>Leave A Tip</h2>
+      <input type="number" id="tipAmount" placeholder="Amount in ETH">
+      <p id="status">Status: Not connected</p>
+  
+      <button type="button" id="connectWallet" >Connect Wallet</button>
+      <button type="button" id="sendTip">Send Tip</button>
+      <span id="close" onclick="this.parentNode.parentNode.parentNode.remove(); return false;">x</span>
+    </form>
+  </div>
+ </div>
 
-    <button type="button" id="connectWallet" >Connect Wallet</button>
-    <button type="button" id="sendTip">Send Tip</button>
-    <span id="close" onclick="this.parentNode.parentNode.remove(); return false;">x</span>
-  </form>
-</div>
 
     <script src="tip.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js" integrity="sha256-nWBTbvxhJgjslRyuAKJHK+XcZPlCnmIAAMixz6EefVk=" crossorigin="anonymous"></script>
