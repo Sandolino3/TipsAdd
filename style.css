@@ -1,4 +1,9 @@
-.body {box-sizing: border-box;}
+body {
+  box-sizing: border-box;
+  /* font-family: "Raleway", "sans-serif"; */
+  font-family: 'Courier New', Courier, monospace;
+}
+
 
 .click-here-img{
   width: 150px;
@@ -11,6 +16,7 @@
 
 .popup-overlay{
   display: none;
+  position: absolute;
   background: rgba(0, 0, 0, 0.4);
   left: 0;
   top: 0;
@@ -20,22 +26,25 @@
 
 /* The popup form - hidden by default */
 .form-popup {
+  max-width: 300px;
+  padding: 100px;
   position: fixed;
-  /* border: 3px solid #f1f1f1; */
-  /* z-index: 9; */
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  box-shadow: 0 6px 55px -10px rgba(0, 0, 0, 0.7);
+  background-image: url('./background_image.jpg');
+  /* object-fit: cover; */
 }
 
 
 
 /* Add styles to the form container */
-.form-container {
+/* .form-container {
   max-width: 300px;
-  padding: 10px;
-  background-color: white;
-}
+  padding: 100px;
+
+} */
 
 /* Full-width input fields */
 #tipAmount {
