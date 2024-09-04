@@ -90,7 +90,7 @@ document.getElementById('sendTip').addEventListener('click', async () => {
 });
 
 
-document.querySelector('.open-button').addEventListener('click',(e)=>{
+document.querySelector('.click-here-img').addEventListener('click',(e)=>{
 	let formEl = document.getElementById("myForm")
 	e.currentTarget.style.display = "none";
     formEl.style.display = "block";

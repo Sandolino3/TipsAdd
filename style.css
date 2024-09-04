@@ -1,29 +1,12 @@
-/* body {
-    font-family: Arial, sans-serif;
-    background-color: hsl(190, 100%, 50%);
-    text-align: center;
-    padding: 50px;
-}
-
-button, input {
-    padding: 10px;
-    margin: 10px;
-} */
-
 .body {box-sizing: border-box;}
 
-/* Button used to open the contact form - fixed at the bottom of the page */
-.open-button {
-  background-color: #555;
-  color: white;
-  padding: 16px 20px;
-  border: none;
+.click-here-img{
+  width: 150px;
+  height: auto;
   cursor: pointer;
-  opacity: 0.8;
   position: fixed;
   bottom: 23px;
   right: 28px;
-  width: 280px;
 }
 
 /* The popup form - hidden by default */
